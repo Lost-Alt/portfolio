@@ -43,10 +43,10 @@ export function ServicesSection() {
 
   return (
     <section id="skills" className="py-16 md:py-24 scroll-mt-20">
-      <div className="mx-auto max-w-6xl px-4">
-        <div className="text-center mb-12 md:mb-16">
+      <div className="mx-auto max-w-6xl px-4 bg-[#e3f6fa] rounded-3xl py-8 md:py-10">
+        <div className="text-center mb-12 md:mb-16 bg-[#172149] rounded-3xl py-10 md:py-14 px-6 md:px-10">
           <h2 className="text-3xl md:text-[44px] md:leading-[56px] font-extrabold text-[#fbe9a1] mb-4">专业技能</h2>
-          <p className="text-ink-2 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="text-white/65 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
             课程所学与兴趣驱动，一步一个脚印打磨出来的技术栈。
           </p>
         </div>

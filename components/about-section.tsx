@@ -69,11 +69,11 @@ const honors = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-16 md:py-28 scroll-mt-20">
+    <section id="about" className="py-16 md:py-28 scroll-mt-20 bg-[#e3f6fa]">
       <div className="mx-auto max-w-3xl px-4">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-[42px] md:leading-[54px] font-bold text-ink mb-4">
-            获得的<span className="text-brand-deep">荣誉</span>
+            获得的<span className="text-[#172149]">荣誉</span>
           </h2>
           <p className="text-ink-2 text-base md:text-lg leading-relaxed">
             过去的成绩是出发的起点。严于律己，把每一件事做到位，剩下的交给时间。
