@@ -1,0 +1,158 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #fbf8f4;
+  --foreground: #14151a;
+  --card: #ffffff;
+  --card-foreground: #14151a;
+  --popover: #ffffff;
+  --popover-foreground: #14151a;
+  --primary: #30b4ff;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f0ea;
+  --secondary-foreground: #14151a;
+  --muted: #f1eee8;
+  --muted-foreground: #6f6f7a;
+  --accent: #30b4ff;
+  --accent-foreground: #ffffff;
+  --destructive: #e5484d;
+  --destructive-foreground: #ffffff;
+  --border: #e6e1d8;
+  --input: #ffffff;
+  --ring: #9cd7f5;
+  --radius: 0.75rem;
+  --chart-1: #30b4ff;
+  --chart-2: #f0bc5b;
+  --chart-3: #78b8a0;
+  --chart-4: #e39aa8;
+  --chart-5: #9ba0e0;
+  --sidebar: #faf7f2;
+  --sidebar-foreground: #14151a;
+  --sidebar-primary: #30b4ff;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f1eee8;
+  --sidebar-accent-foreground: #14151a;
+  --sidebar-border: #e6e1d8;
+  --sidebar-ring: #9cd7f5;
+}
+
+.dark {
+  --background: #14151a;
+  --foreground: #f4f4f6;
+  --card: #1c1d24;
+  --card-foreground: #f4f4f6;
+  --popover: #22232c;
+  --popover-foreground: #f4f4f6;
+  --primary: #4db3f1;
+  --primary-foreground: #14151a;
+  --secondary: #26272f;
+  --secondary-foreground: #f4f4f6;
+  --muted: #26272f;
+  --muted-foreground: #9c9ca8;
+  --accent: #5cbef4;
+  --accent-foreground: #14151a;
+  --destructive: #e5484d;
+  --destructive-foreground: #14151a;
+  --border: #34353f;
+  --input: #45464f;
+  --ring: #62bdf2;
+  --chart-1: #4db3f1;
+  --chart-2: #f2c46f;
+  --chart-3: #86c5ad;
+  --chart-4: #eda9b5;
+  --chart-5: #a9adea;
+  --sidebar: #181920;
+  --sidebar-foreground: #f4f4f6;
+  --sidebar-primary: #4db3f1;
+  --sidebar-primary-foreground: #14151a;
+  --sidebar-accent: #26272f;
+  --sidebar-accent-foreground: #f4f4f6;
+  --sidebar-border: #34353f;
+  --sidebar-ring: #62bdf2;
+}
+
+@theme inline {
+  --font-sans: "Onest", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "JetBrains Mono Fallback", monospace;
+
+  /* 主强调色（#30b4ff 品牌蓝体系） */
+  --color-brand: #30b4ff;
+  --color-brand-deep: #0a6fc0;
+  --color-brand-dark: #08599f;
+  --color-brand-soft: #e5f5ff;
+
+  /* 低饱和撞色盘 */
+  --color-cream: #faf5ea;
+  --color-cream-deep: #f1e8d0;
+  --color-sky: #e8f1fb;
+  --color-blush: #f9e9ec;
+  --color-sage: #e9f2ea;
+
+  /* 中性文字三级灰阶 */
+  --color-ink: #14151a;
+  --color-ink-2: #56565f;
+  --color-ink-3: #8f8f99;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* 柔和跑马灯 */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
