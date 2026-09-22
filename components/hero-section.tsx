@@ -4,10 +4,7 @@ import { Button } from "@/components/ui/button"
 export function HeroSection() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="relative mx-auto max-w-6xl pt-14 pb-16 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 md:gap-16 items-center bg-[#e3f6fa] rounded-3xl px-6 md:px-12 overflow-hidden">
-        {/* 柔和背景光斑（青色调，融入面板） */}
-        <div className="pointer-events-none absolute -top-32 -right-24 w-[420px] h-[420px] rounded-full bg-[#c9eef6] blur-3xl opacity-80" />
-        <div className="pointer-events-none absolute -bottom-36 -left-28 w-[420px] h-[420px] rounded-full bg-white/80 blur-3xl opacity-80" />
+      <div className="relative mx-auto max-w-6xl pt-14 pb-16 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 md:gap-16 items-center px-6 md:px-12">
         <div className="space-y-7">
           <div>
             <span className="inline-flex items-center gap-2 bg-brand-soft text-brand-deep text-sm font-semibold px-4 py-1.5 rounded-full">
