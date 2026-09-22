@@ -5,7 +5,6 @@ export function LogoMarquee() {
     "JavaScript",
     "Vue",
     "React",
-    "Next",
     "AI 应用",
   ]
 

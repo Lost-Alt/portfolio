@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, ArrowUp } from "lucide-react"
+import { Mail, MessageCircle, ArrowUp, Github } from "lucide-react"
 
 export function Footer() {
   return (
@@ -18,6 +18,15 @@ export function Footer() {
               aria-label="邮箱"
             >
               <Mail className="w-5 h-5" />
+            </a>
+            <a
+              href="https://github.com/Lost-Alt"
+              target="_blank"
+              rel="noreferrer"
+              className="w-11 h-11 bg-white/10 hover:bg-brand-deep rounded-full flex items-center justify-center transition-colors"
+              aria-label="GitHub"
+            >
+              <Github className="w-5 h-5" />
             </a>
             <a
               href="#top"

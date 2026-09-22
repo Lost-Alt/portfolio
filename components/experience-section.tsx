@@ -19,7 +19,7 @@ export function ExperienceSection() {
       period: "2026 春",
       title: "STL · 数据结构与算法",
       description:
-        "接触到 C++ 标准库 STL 后觉得妙趣横生，顺势深入研究，并系统学习数据结构与算法，为自己夯实编程地基。",
+        "接触到 C++ 标准库 STL 后觉得妙趣横生，顺势深入研究，并通过洛谷题型来学习数据结构与算法，为自己夯实编程地基。",
     },
     {
       stage: "04",

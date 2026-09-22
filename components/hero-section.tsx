@@ -4,11 +4,10 @@ import { Button } from "@/components/ui/button"
 export function HeroSection() {
   return (
     <section id="top" className="relative overflow-hidden">
-      {/* 柔和背景光斑 */}
-      <div className="pointer-events-none absolute -top-32 -right-24 w-[420px] h-[420px] rounded-full bg-brand-soft blur-3xl opacity-70" />
-      <div className="pointer-events-none absolute -bottom-36 -left-28 w-[420px] h-[420px] rounded-full bg-sky blur-3xl opacity-70" />
-
-      <div className="relative mx-auto max-w-6xl px-4 pt-14 pb-16 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div className="relative mx-auto max-w-6xl pt-14 pb-16 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 md:gap-16 items-center bg-[#e3f6fa] rounded-3xl px-6 md:px-12 overflow-hidden">
+        {/* 柔和背景光斑（青色调，融入面板） */}
+        <div className="pointer-events-none absolute -top-32 -right-24 w-[420px] h-[420px] rounded-full bg-[#c9eef6] blur-3xl opacity-80" />
+        <div className="pointer-events-none absolute -bottom-36 -left-28 w-[420px] h-[420px] rounded-full bg-white/80 blur-3xl opacity-80" />
         <div className="space-y-7">
           <div>
             <span className="inline-flex items-center gap-2 bg-brand-soft text-brand-deep text-sm font-semibold px-4 py-1.5 rounded-full">
@@ -31,7 +30,7 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3.5 pt-1">
-            <Button asChild className="bg-brand-deep text-white hover:bg-brand-dark rounded-full h-[52px] px-8 text-base font-semibold">
+            <Button asChild className="bg-[#002475] text-white hover:bg-[#001a4d] rounded-full h-[52px] px-8 text-base font-semibold shadow-lg shadow-[#002475]/25 hover:-translate-y-1 transition-all duration-300">
               <a href="#projects">
                 <FolderOpen className="w-5 h-5" />
                 查看我的项目
@@ -40,7 +39,7 @@ export function HeroSection() {
             <Button
               asChild
               variant="outline"
-              className="bg-white hover:bg-neutral-50 rounded-full h-[52px] px-8 text-base font-semibold text-ink border border-neutral-300"
+              className="bg-white hover:bg-[#002475] rounded-full h-[52px] px-8 text-base font-semibold text-ink hover:text-white border border-neutral-300 hover:border-[#002475] hover:-translate-y-1 hover:shadow-lg hover:shadow-[#002475]/25 transition-all duration-300"
             >
               <a href="#contact">
                 <Mail className="w-5 h-5" />
@@ -51,7 +50,7 @@ export function HeroSection() {
         </div>
 
         <div className="relative flex justify-center md:justify-end">
-          <div className="relative w-full max-w-md aspect-square rounded-[28px] overflow-hidden bg-gradient-to-br from-[#1fb1d6] via-[#2fc2e8] to-[#9ee4f5] border-8 border-white/80 shadow-2xl shadow-brand/15">
+          <div className="relative w-full max-w-md aspect-square rounded-[28px] overflow-hidden bg-gradient-to-br from-[#1fb1d6] via-[#2fc2e8] to-[#9ee4f5] border-8 border-[#002475] shadow-2xl shadow-brand/15">
             <img
               src="/images/2423c9628a3f7e2ed86a842ed26e95f2.jpg"
               alt="陈彬宇头像"

@@ -1,4 +1,4 @@
-import { Mail, Terminal, Cpu, FileCode, Palette, Network, PlugZap } from "lucide-react"
+import { Mail, Terminal, Cpu, FileCode, Palette, Braces, Network, PlugZap, GitBranch } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function ServicesSection() {
@@ -28,6 +28,12 @@ export function ServicesSection() {
       tile: "bg-cream-deep text-[#a0812f]",
     },
     {
+      title: "JavaScript",
+      description: "掌握基础语法",
+      icon: Braces,
+      tile: "bg-[#fff4d6] text-[#a0812f]",
+    },
+    {
       title: "数据结构与算法",
       description: "熟悉线性表、树、图与常用算法，打好扎实的编程基本功。",
       icon: Network,
@@ -38,6 +44,12 @@ export function ServicesSection() {
       description: "能快速读懂接口文档，把 REST、大模型等外部 API 接入到实际项目中。",
       icon: PlugZap,
       tile: "bg-[#e6e9fb] text-brand-deep",
+    },
+    {
+      title: "开发工具",
+      description: "熟悉 Git，掌握 add / commit / push / pull 等常用操作",
+      icon: GitBranch,
+      tile: "bg-[#ffe8e0] text-[#c25e2e]",
     },
   ]
 

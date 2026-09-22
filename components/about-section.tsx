@@ -30,7 +30,7 @@ const honors = [
     badge: "校级",
     badgeCls: "bg-brand-soft text-brand-deep",
     title: "重庆移通学院第九届大学生程序设计大赛",
-    meta: "二等奖",
+    meta: "三等奖",
     tile: "bg-cream-deep text-[#a0812f]",
   },
   {
